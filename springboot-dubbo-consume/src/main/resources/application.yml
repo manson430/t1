@@ -1,0 +1,12 @@
+server:
+  port: 8802
+dubbo:
+  application:
+    name: member_consume
+  protocol:
+    port: 20880
+    name: dubbo
+  registry:
+    address: zookeeper://127.0.0.1:2181
+  consumer:
+    timeout: 5000
